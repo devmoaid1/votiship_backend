@@ -30,4 +30,4 @@ function addDocuments(collection, docs) {
   docs.forEach((doc) => db.create(collection, doc));
 }
 
-module.exports = setupDatabase;
+module.exports = setupDatabase; 
