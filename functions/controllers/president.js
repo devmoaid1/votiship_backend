@@ -89,10 +89,23 @@ const  President =require("../models/president");
       }catch(err){
           return next(err)
       }
-   
-   
-   
-   
+   } 
+
+
+   deletePresident=async(req,res,next)=>{
+
+      try{
+           const id=req.params.id;
+
+           const result=await President.delete(id);
+
+           res.json(result);
+      }catch(err){
+     
+            return next(err);
+      }
+
+
    }
    
 

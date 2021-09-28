@@ -26,6 +26,10 @@ class PresidentModel{
 
    update(id,president){
        return db.set("presidents",id,president);
+   } 
+
+   delete(id){
+       return db.delete("presidents",id);
    }
 
 
